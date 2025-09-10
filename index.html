@@ -10,26 +10,79 @@
             background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             color: #fff;
             text-align: center;
-            padding-top: 60px;
+            padding-top: 40px;
             margin: 0;
         }
         .container {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             padding: 25px;
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             display: inline-block;
             animation: fadeIn 2s ease-in-out;
+            max-width: 700px;
         }
         h1 {
-            font-size: 36px;
-            color: #ffcc00;
-            text-shadow: 0 0 10px #ff9900, 0 0 20px #ff6600;
+            font-size: 38px;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #ffcc00, #ff6600, #ff0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 15px #ff6600, 0 0 25px #ff3300;
+            font-weight: bold;
         }
         p {
             font-size: 20px;
             color: #e0e0e0;
             text-shadow: 0 0 8px #00e6e6;
+        }
+        .profile {
+            margin-top: 25px;
+            background: rgba(0,0,0,0.4);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.6);
+        }
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ffcc00;
+            box-shadow: 0 0 15px #ff6600;
+        }
+        .profile h2 {
+            font-size: 26px;
+            margin: 10px 0 5px;
+            color: #ffcc00;
+            text-shadow: 0 0 8px #ff6600;
+        }
+        .meta {
+            font-size: 14px;
+            color: #bbb;
+            margin-bottom: 15px;
+        }
+        .desc {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+            color: #f0f0f0;
+            text-shadow: 0 0 5px #0099ff;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #ff6600;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            box-shadow: 0 0 12px #ff3300;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ff3300;
+            box-shadow: 0 0 20px #ff6600;
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: scale(0.9); }
@@ -40,8 +93,25 @@
 <body>
 
     <div class="container">
-        <h1>🔥⚡ مرحباً بك في موقع ZIRAX 🎮🌟</h1>
-        <p>🚀 هذا هو موقعك الجديد ✨ يمكنك البدء في إضافة المحتوى الأسطوري هنا 💎🔥</p>
+        <h1>✨🔥 مرحباً بك في موقع ZIRAX الأسطورة ⚡👑</h1>
+        <p>🚀 هنا تبدأ رحلتك في عالم الإبداع والحماس مع ZIRAX 💎🔥</p>
+
+        <!-- قسم البروفايل -->
+        <div class="profile">
+            <img src="https://i.ibb.co/gZss3FkY" alt="ZIRAX Profile">
+            <h2>🎬 قناة ZIRAX</h2>
+            <div class="meta">⏳ منذ يوم</div>
+            <div class="desc">
+                ✨ أهلاً بك في عالَم ZIRAX الأسطوري 🔥⚡  
+                هنا ستجد كل ما تحتاجه من ⚙️ مولدات وبرامج وأدوات خرافية 🚀،  
+                تحميلات حصرية مباشرة من قناتي على اليوتيوب 🎮،  
+                مع شروحات مُفصلة تساعدك على الاستفادة لأقصى حد 🌟.  
+                استعد لتجربة مليئة بالإبداع 💡 والحماس 💥 حيث أشارك معك  
+                أفضل الحيل 🛠️ والأسرار 🎭 التي تجعل تصميماتك وأعمالك  
+                مختلفة عن البقية! 🎨🔥  
+            </div>
+            <a href="https://youtube.com/@zirax_art?si=SP29rUF0pkaEOl-i" class="btn">📺 اشترك في القناة</a>
+        </div>
     </div>
 
 </body>
