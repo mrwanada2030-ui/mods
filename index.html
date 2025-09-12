@@ -1,148 +1,166 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ZIRAX - كلمة المرور</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZIRAX - أفضل مودات ماينكرافت</title>
   <style>
     body {
-      margin: 0;
-      font-family: "Arial", sans-serif;
+      font-family: 'Arial', sans-serif;
       background: #fff;
       color: #222;
       direction: rtl;
-      text-align: center;
-      padding: 40px;
+      margin: 0;
+      padding: 0;
     }
-    .hidden { display: none; }
-    input[type="password"] {
-      padding: 10px;
-      font-size: 16px;
-      border: 2px solid #8b0000;
-      border-radius: 6px;
-      width: 200px;
-      margin-bottom: 10px;
-    }
-    button {
-      padding: 10px 20px;
-      background: #8b0000;
+
+    /* الشريط العلوي */
+    .top-bar {
+      background: #007bff;
       color: #fff;
-      border: none;
+      padding: 12px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .top-bar a {
+      color: #fff;
+      background: #0056b3;
+      padding: 6px 12px;
       border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
+      text-decoration: none;
+      margin-right: 10px;
     }
-    button:hover { background: #b22222; }
-    .note {
-      margin: 15px 0;
-      font-size: 14px;
-      color: #444;
-      background: #ffe4e1;
-      padding: 8px;
-      border-radius: 8px;
-      border: 1px dashed #8b0000;
-      line-height: 1.6;
+    .top-bar a:hover {
+      background: #004080;
     }
-    .mods-list {
+
+    /* البروفايل */
+    .profile {
+      text-align: center;
+      padding: 20px;
+    }
+    .profile img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      border: 3px solid #007bff;
+    }
+    .profile h2 {
+      margin: 10px 0 5px;
+      color: #007bff;
+    }
+
+    /* صورة المصغر */
+    .thumbnail {
+      text-align: center;
+      margin: 20px;
+    }
+    .thumbnail img {
+      max-width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* وصف المود */
+    .description {
       max-width: 800px;
       margin: auto;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .mod-box {
-      background: #fafafa;
-      padding: 16px;
-      border-radius: 12px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      text-align: right;
+      padding: 20px;
+      line-height: 1.8;
+      font-size: 16px;
     }
     .download-btn {
-      display: inline-block;
-      background: #8b0000;
+      display: block;
+      text-align: center;
+      background: #007bff;
       color: #fff;
-      padding: 8px 14px;
-      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 8px;
-      transition: 0.2s;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 20px auto;
+      max-width: 200px;
     }
-    .download-btn:hover { background: #b22222; }
+    .download-btn:hover {
+      background: #0056b3;
+    }
+
+    /* التعليقات */
+    .comments {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      border-top: 2px solid #ddd;
+    }
+    .comments h3 {
+      margin-bottom: 15px;
+      color: #007bff;
+    }
+    .comments textarea {
+      width: 100%;
+      height: 100px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .comments button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .comments button:hover {
+      background: #0056b3;
+    }
   </style>
 </head>
 <body>
 
-  <!-- شاشة كلمة السر -->
-  <div id="lock-screen">
-    <h2>🔒 أدخل كلمة السر للدخول إلى موقع ZIRAX</h2>
-    <input type="password" id="password" placeholder="اكتب كلمة السر">
+  <!-- الشريط العلوي -->
+  <div class="top-bar">
+    🌟 موقع ZIRAX 🌟
+    <a href="#">انضم الآن</a>
+  </div>
+
+  <!-- البروفايل -->
+  <div class="profile">
+    <img src="https://i.postimg.cc/N5s7jrV5/profile.jpg" alt="بروفايل Zirax">
+    <h2>ZIRAX</h2>
+  </div>
+
+  <!-- صورة المصغر -->
+  <div class="thumbnail">
+    <img src="https://i.postimg.cc/GTh8dv2R/thumbnail.jpg" alt="صورة مصغرة Zirax">
+  </div>
+
+  <!-- وصف المود -->
+  <div class="description">
+    <h2>🔥 أفضل مود اللغة العربية على ماينكرافت الجوال 🔥</h2>
+    <p>
+      هذا المود الأسطوري هو واحد من أفضل الإضافات لعشاق ماينكرافت الجوال 🎮✨  
+      يضيف دعم كامل للغة العربية داخل اللعبة 🕌💬، حيث يقوم بتعديل الرسائل داخل الشات 
+      ويجعل تجربتك أكثر متعة وسلاسة.  
+      يتميز المود بسهولة التثبيت، وحجمه الخفيف، وأيضًا التوافق مع إصدار 1.21.100.  
+      إذا كنت تبحث عن طريقة لجعل لعبك أكثر احترافية بالعربية، فهذا المود هو خيارك الأمثل. 🌟
+    </p>
+
+    <!-- زر التحميل -->
+    <a class="download-btn" target="_blank" href="https://www.mediafire.com/file/l3w4giurvu50x4t/%25D9%2585%25D9%2588%25D8%25AF_%25D8%25A7%25D9%2584%25D9%2584%25D8%25BA%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25B9%25D8%25B1%25D8%25A8%25D9%258A%25D8%25A9_%25D8%25AD%25D9%2582%25D9%2588%25D9%2582_ZaX.mcaddon/file">⬇️ تحميل المود</a>
+  </div>
+
+  <!-- قسم التعليقات -->
+  <div class="comments">
+    <h3>💬 اترك تعليقك</h3>
+    <textarea placeholder="اكتب تعليقك هنا..."></textarea>
     <br>
-    <button onclick="checkPassword()">دخول</button>
-
-    <div class="note">
-      ⚠️ ملاحظة: كلمة السر ستجدها في الفيديو بالأسفل ⬇️
-    </div>
-
-    <!-- فيديو (بدل الرابط برابط فيديو يوتيوب الخاص بك) -->
-    <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    <button>إرسال</button>
   </div>
-
-  <!-- المحتوى المخفي -->
-  <div id="site-content" class="hidden">
-
-    <h2>✨🔥 أفضـل ٥ مـودات لمـايـن كـرافـت الجـوال (1.21.100) 🔥✨</h2>
-
-    <div class="mods-list">
-      <!-- مود 1 -->
-      <div class="mod-box">
-        <h3>🕌 مود اللغة العربية</h3>
-        <a class="download-btn" target="_blank" href="https://www.mediafire.com/file/l3w4giurvu50x4t/%25D9%2585%25D9%2588%25D8%25AF_%25D8%25A7%25D9%2584%25D9%2584%25D8%25BA%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25B9%25D8%25B1%25D8%25A8%25D9%258A%25D8%25A9_%25D8%25AD%25D9%2582%25D9%2588%25D9%2582_ZaX.mcaddon/file">⬇️ تحميل</a>
-      </div>
-
-      <!-- مود 2 -->
-      <div class="mod-box">
-        <h3>🌙 مود نايت فيجن</h3>
-        <a class="download-btn" target="_blank" href="https://www.mediafire.com/file/5swemgfjkbcfeuc/Night_Vision_%257BZirax%257D.mcpack/file">⬇️ تحميل</a>
-      </div>
-
-      <!-- مود 3 -->
-      <div class="mod-box">
-        <h3>⚡ مود التحليل السريع</h3>
-        <a class="download-btn" target="_blank" href="https://www.mediafire.com/file/n8d9k70awb5lect/%25D9%2585%25D9%2580%25D9%2580%25D9%2580%25D9%2588%25D8%25AF_%25D8%25AA%25D9%2580%25D9%2580%25D8%25AD%25D9%2584%25D9%2580%25D9%2580%25D9%258A%25D9%2584_%25D8%25A7%25D9%2584%25D8%25B3%25D9%2580%25D9%2580%25D9%2580%25D8%25B1%25D9%258A%25D9%2580%25D9%2580%25D8%25B9_mcpack/file">⬇️ تحميل</a>
-      </div>
-
-      <!-- مود 4 -->
-      <div class="mod-box">
-        <h3>🚢 مود السفن (إيرت كرافت)</h3>
-        <a class="download-btn" target="_blank" href="https://www.mediafire.com/file/2hi55ia3xbh8jbi/%25D9%2585%25D9%2580%25D9%2580%25D9%2588%25D8%25AF_%25D8%25A7%25D9%2584%25D8%25B3%25D9%2581%25D9%2580%25D9%2580%25D9%2580%25D9%2586_%25D9%2585%25D8%25AA%25D9%2580%25D9%2580%25D9%2584%25D8%25A7__%25D8%25A3%25D9%258A%25D9%2580%25D9%2580%25D8%25B1%25D8%25AA_%25D9%2583%25D9%2580%25D9%2580%25D8%25B1%25D8%25A7%25D9%2581%25D9%2580%25D9%2580%25D8%25AA_%25D9%2585%25D9%2580%25D9%2580%25D9%2586_%25D8%25B2%25D9%258A%25D9%2580%25D9%2580%25D8%25B1%25D8%25A7%25D9%2583%25D9%2580%25D9%2580%25D9%2580%25D8%25B3.mcaddon/file">⬇️ تحميل</a>
-      </div>
-
-      <!-- مود 5 -->
-      <div class="mod-box">
-        <h3>🗡️ مود ضرب مثل الجافا</h3>
-        <a class="download-btn" target="_blank" href="https://www.mediafire.com/file/tymv8azle9suxi6/%25D9%2585%25D9%2580%25D9%2580%25D9%2588%25D8%25AF_%25D8%25B6%25D9%2580%25D9%2580%25D8%25B1%25D8%25A8_%25D9%2585%25D8%25AA%25D9%2580%25D9%2580%25D9%2584%25D8%25A7_%25D8%25AC%25D8%25A7%25D9%2581%25D9%2580%25D9%2580%25D8%25A7_1.mcpack/file">⬇️ تحميل (ملف 1)</a>
-        <a class="download-btn" target="_blank" href="https://www.mediafire.com/file/1ah88whbrku58vn/%25D9%2585%25D9%2580%25D9%2580%25D9%2588%25D8%25AF_%25D8%25B6%25D9%2580%25D9%2580%25D8%25B1%25D8%25A8_%25D9%2585%25D8%25AA%25D9%2580%25D9%2580%25D9%2584%25D8%25A7_%25D8%25AC%25D8%25A7%25D9%2581%25D9%2580%25D9%2580%25D8%25A7_2.mcpack/file">⬇️ تحميل (ملف 2)</a>
-        <div class="note">
-          ⚠️ ملاحظة: هذا المود يتكون من <b>ملفين</b> يجب تحميلهما معًا  
-          وإضافتهم لعالمك في Minecraft حتى يشتغل بشكل صحيح ✅
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    function checkPassword() {
-      const input = document.getElementById("password").value;
-      if (input === "2030") {
-        document.getElementById("lock-screen").style.display = "none";
-        document.getElementById("site-content").classList.remove("hidden");
-      } else {
-        alert("❌ كلمة السر غير صحيحة! حاول مرة أخرى.");
-      }
-    }
-  </script>
 
 </body>
-  </html>
+</html>
