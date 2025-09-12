@@ -3,164 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZIRAX - أفضل مودات ماينكرافت</title>
+  <title>✦ ZIRAX ✦</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background: #fff;
-      color: #222;
-      direction: rtl;
+      font-family: 'Tahoma', sans-serif;
+      background-color: #fff;
+      color: #333;
       margin: 0;
       padding: 0;
+      direction: rtl;
     }
 
-    /* الشريط العلوي */
-    .top-bar {
-      background: #007bff;
-      color: #fff;
-      padding: 12px;
-      text-align: center;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .top-bar a {
-      color: #fff;
-      background: #0056b3;
-      padding: 6px 12px;
-      border-radius: 6px;
-      text-decoration: none;
-      margin-right: 10px;
-    }
-    .top-bar a:hover {
-      background: #004080;
-    }
-
-    /* البروفايل */
-    .profile {
+    header {
+      background-color: #007BFF;
+      color: white;
       text-align: center;
       padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
     }
-    .profile img {
-      border-radius: 50%;
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .profile-img {
       width: 120px;
       height: 120px;
-      border: 3px solid #007bff;
-    }
-    .profile h2 {
-      margin: 10px 0 5px;
-      color: #007bff;
+      border-radius: 50%;
+      margin: 15px;
+      border: 3px solid #007BFF;
     }
 
-    /* صورة المصغر */
     .thumbnail {
-      text-align: center;
-      margin: 20px;
-    }
-    .thumbnail img {
-      max-width: 90%;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 600px;
+      border-radius: 15px;
+      margin: 15px 0;
+      border: 2px solid #007BFF;
     }
 
-    /* وصف المود */
     .description {
-      max-width: 800px;
-      margin: auto;
+      background: #f9f9f9;
       padding: 20px;
-      line-height: 1.8;
-      font-size: 16px;
+      border-radius: 10px;
+      margin: 20px 0;
+      line-height: 2;
+      font-size: 18px;
+      text-align: justify;
+      max-height: 600px;
+      overflow-y: scroll;
     }
-    .download-btn {
-      display: block;
-      text-align: center;
-      background: #007bff;
-      color: #fff;
+
+    .download-link a {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 25px;
+      margin-top: 15px;
       text-decoration: none;
       font-weight: bold;
-      padding: 12px;
       border-radius: 8px;
-      margin: 20px auto;
-      max-width: 200px;
+      transition: 0.3s;
     }
-    .download-btn:hover {
+
+    .download-link a:hover {
+      background-color: #0056b3;
+    }
+
+    .comments {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    .comments h3 {
+      margin-bottom: 15px;
+      color: #007BFF;
+    }
+
+    .comment-box textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      resize: none;
+    }
+
+    .comment-box button {
+      margin-top: 10px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .comment-box button:hover {
       background: #0056b3;
     }
 
-    /* التعليقات */
-    .comments {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-      border-top: 2px solid #ddd;
+    .comment-list {
+      margin-top: 20px;
     }
-    .comments h3 {
-      margin-bottom: 15px;
-      color: #007bff;
-    }
-    .comments textarea {
-      width: 100%;
-      height: 100px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
+
+    .comment {
+      background: #f1f1f1;
       padding: 10px;
+      border-radius: 8px;
       margin-bottom: 10px;
-      font-size: 14px;
     }
-    .comments button {
-      background: #007bff;
-      color: #fff;
-      border: none;
-      padding: 10px 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-    .comments button:hover {
-      background: #0056b3;
+
+    .comment strong {
+      color: #007BFF;
     }
   </style>
 </head>
 <body>
 
-  <!-- الشريط العلوي -->
-  <div class="top-bar">
-    🌟 موقع ZIRAX 🌟
-    <a href="#">انضم الآن</a>
+  <header>
+    ✦ ZIRAX ✦
+  </header>
+
+  <div class="container">
+    <img class="profile-img" src="https://i.postimg.cc/N5s7jrV5/profile.jpg" alt="بروفايل">
+    <img class="thumbnail" src="https://i.postimg.cc/GTh8dv2R/thumbnail.jpg" alt="مصغر">
+
+    <div class="description">
+      <h2>🔥 أفضل مود اللغة العربية على ماينكرافت الجوال 🔥</h2>
+      <p>
+        ✦ مرحبًا بك في عالم ✦ ZIRAX ✦ حيث نمنحك واحدة من أقوى وأهم الإضافات التي يبحث عنها كل لاعب عربي لماينكرافت.  
+        هذا المود الرائع لا يقتصر فقط على كونه تعديل بسيط، بل هو جسر حقيقي بينك وبين اللعبة، يجعلك تعيش تجربة أكثر قربًا وانغماسًا في عالم البكسل.  
+      </p>
+      <p>
+        ✦ مود اللغة العربية ليس مجرد خطوط مترجمة، بل هو أسلوب جديد بالكامل في اللعب.  
+        لقد أعدنا صياغة الرسائل، وضبطنا طريقة ظهور النصوص في الدردشة، وصممنا لك تجربة سلسة تُمكنك من قراءة كل شيء بلغتك الأم دون صعوبة.  
+        تخيل أنك تلعب الآن وتستطيع التفاعل مع أصدقائك، والدردشة داخل اللعبة، ورؤية التعليمات والأوامر مكتوبة بوضوح بالعربية،  
+        مما يمنحك تحكمًا أفضل ويجعلك أكثر انغماسًا.  
+      </p>
+      <p>
+        ✦ لقد عملنا على هذا المشروع لفترة طويلة، حتى نضمن لك أنه لا يحتوي على أخطاء مزعجة.  
+        نحن نعلم أن اللاعبين يعانون دائمًا من مشاكل الترجمة غير المكتملة أو النصوص التي تظهر بشكل مقلوب، لذلك قمنا بتصحيح كل هذه العيوب.  
+        النتيجة؟ تجربة لعب احترافية متكاملة، تجعل عالم ماينكرافت يبدو وكأنه صُمم خصيصًا لك.  
+      </p>
+      <p>
+        ✦ هذا المود يتوافق مع آخر إصدار من ماينكرافت (1.21.100)، وهو مُجرّب ومضمون.  
+        ستجد فيه تحسينات لا تقتصر فقط على اللغة، بل أيضًا على رسائل التنبيه، إشعارات الأوامر، وحتى بعض النصوص الداخلية في اللعبة.  
+      </p>
+      <p>
+        ✦ لماذا تحتاج هذا المود؟  
+        - لأنه يمنحك راحة بصرية أثناء اللعب.  
+        - لأنه يجعل الدردشة أكثر وضوحًا.  
+        - لأنه يساعدك على فهم كل تفاصيل اللعبة بسرعة.  
+        - لأنه من تطوير ✦ ZIRAX ✦ الذي يهتم دائمًا بجودة أعماله.  
+      </p>
+      <p>
+        ✦ هذا مجرد بداية! قريبًا جدًا سنطلق تحديثات جديدة تضيف المزيد من التحسينات، وربما مميزات خاصة ستجعل هذا المود الخيار الأول لجميع اللاعبين العرب.  
+        لذلك ننصحك بتحميله الآن وتجربته بنفسك.  
+      </p>
+    </div>
+
+    <div class="download-link">
+      <a target="_blank" href="https://www.mediafire.com/file/l3w4giurvu50x4t/%25D9%2585%25D9%2588%25D8%25AF_%25D8%25A7%25D9%2584%25D9%2584%25D8%25BA%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25B9%25D8%25B1%25D8%25A8%25D9%258A%25D8%25A9_%25D8%25AD%25D9%2582%25D9%2588%25D9%2582_ZaX.mcaddon/file">
+        ⬇️ تحميل المود
+      </a>
+    </div>
+
+    <div class="comments">
+      <h3>💬 التعليقات</h3>
+      <div class="comment-box">
+        <textarea id="commentText" placeholder="اكتب تعليقك هنا..."></textarea>
+        <button onclick="addComment()">نشر التعليق</button>
+      </div>
+      <div class="comment-list" id="commentList"></div>
+    </div>
   </div>
 
-  <!-- البروفايل -->
-  <div class="profile">
-    <img src="https://i.postimg.cc/N5s7jrV5/profile.jpg" alt="بروفايل Zirax">
-    <h2>ZIRAX</h2>
-  </div>
+  <script>
+    function addComment() {
+      const commentText = document.getElementById('commentText').value;
+      if (commentText.trim() === "") return;
 
-  <!-- صورة المصغر -->
-  <div class="thumbnail">
-    <img src="https://i.postimg.cc/GTh8dv2R/thumbnail.jpg" alt="صورة مصغرة Zirax">
-  </div>
+      const commentList = document.getElementById('commentList');
+      const newComment = document.createElement('div');
+      newComment.classList.add('comment');
+      newComment.innerHTML = "<strong>زائر:</strong> " + commentText;
 
-  <!-- وصف المود -->
-  <div class="description">
-    <h2>🔥 أفضل مود اللغة العربية على ماينكرافت الجوال 🔥</h2>
-    <p>
-      هذا المود الأسطوري هو واحد من أفضل الإضافات لعشاق ماينكرافت الجوال 🎮✨  
-      يضيف دعم كامل للغة العربية داخل اللعبة 🕌💬، حيث يقوم بتعديل الرسائل داخل الشات 
-      ويجعل تجربتك أكثر متعة وسلاسة.  
-      يتميز المود بسهولة التثبيت، وحجمه الخفيف، وأيضًا التوافق مع إصدار 1.21.100.  
-      إذا كنت تبحث عن طريقة لجعل لعبك أكثر احترافية بالعربية، فهذا المود هو خيارك الأمثل. 🌟
-    </p>
+      commentList.appendChild(newComment);
+      document.getElementById('commentText').value = "";
+    }
 
-    <!-- زر التحميل -->
-    <a class="download-btn" target="_blank" href="https://www.mediafire.com/file/l3w4giurvu50x4t/%25D9%2585%25D9%2588%25D8%25AF_%25D8%25A7%25D9%2584%25D9%2584%25D8%25BA%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25B9%25D8%25B1%25D8%25A8%25D9%258A%25D8%25A9_%25D8%25AD%25D9%2582%25D9%2588%25D9%2582_ZaX.mcaddon/file">⬇️ تحميل المود</a>
-  </div>
-
-  <!-- قسم التعليقات -->
-  <div class="comments">
-    <h3>💬 اترك تعليقك</h3>
-    <textarea placeholder="اكتب تعليقك هنا..."></textarea>
-    <br>
-    <button>إرسال</button>
-  </div>
+    document.addEventListener('contextmenu', function(e) {
+      if (e.target.tagName === "IMG") {
+        e.preventDefault();
+      }
+    });
+  </script>
 
 </body>
-</html>
+        </html>
